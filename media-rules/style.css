@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.box1 {
+
+  background-color: red;
+  width: 150px;
+  height: 150px;
+}
+
+.box2 {
+
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+}
+
+.box3 {
+
+  background-color: green;
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (min-width: 400px) {
+  .box1 {
+    float: left;
+  }
+
+  .box2 {
+    float: left;
+  }
+
+  .box3 {
+    float: left;
+  }
+}
+
+/* 
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  .box1 {
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .box1 {
+    background-color: green;
+    width: 300px;
+    margin: 0 auto;
+  }
+} */
+
+
+

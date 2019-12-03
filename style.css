@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+div.container {
+  /* width: auto; */
+  /* height: auto; */
+  background-color: aquamarine;
+}
+
+div.list-items {
+  /* width: 150px; */
+  /* height: 150px; */
+  /* margin: 5px; */
+  /* background-color: orange; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 3fr;
+  grid-column-gap: 10px;
+  grid-template-rows: 60px 200px;
+  /* grid-auto-rows: 200px; */
+  grid-row-gap: 10px;
+
+  grid-template-areas: 
+    "header header header header header"
+    "div1 div2 div4 div4 div3"
+    "div1 div2 div4 div4 div3"
+    "mid mid mid div5 div5"
+    "div7 div7 div7 div7 div7"
+    "footer footer footer footer footer";
+}
+
+.list-items {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  font-size: 3rem;
+}
+
+.list-items1 {
+  background-color: purple;
+  grid-area: header;
+  order: 1;
+}
+
+.list-items2 {
+  background-color: green;
+  grid-area: div1;
+  order: 2;
+}
+
+.list-items3 {
+  background-color: yellow;
+  grid-area: div2;
+  order: 4;
+}
+
+.list-items4 {
+  background-color: lightblue;
+  grid-area: div3;
+  order: 3;
+}
+
+.list-items5 {
+  background-color: lightcoral;
+  grid-area: mid;
+  order: 5;
+}
+
+.list-items6 {
+  background-color: gray;
+  grid-area: div4;
+  order: 6;
+}
+
+.list-items7 {
+  background-color: darkcyan;
+  grid-area: div5;
+  order: 7;
+}
+
+.list-items8 {
+  background-color: darkkhaki;
+  grid-area: div6;
+  order: 8;
+}
+
+.list-items9 {
+  background-color: darkorchid;
+  grid-area: div7;
+  order: 9;
+}
+
+.list-items10 {
+  background-color: lightseagreen;
+  grid-area: footer;
+  order: 10;
+}
